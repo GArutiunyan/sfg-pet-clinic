@@ -10,6 +10,10 @@
     <name>Archetype - pet-clinic-data</name>
     <url>http://maven.apache.org</url>
 
+    <properties>
+        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.h2database</groupId>
@@ -57,9 +61,6 @@
                     <goals>
                         <goal>repackage</goal>
                     </goals>
-                        <configuration>
-                            <skip>true</skip>
-                        </configuration>
                     </execution>
                 </executions>
 
